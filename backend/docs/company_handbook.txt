@@ -1,0 +1,29 @@
+Company Handbook — Customer Success & Retention Policy
+
+Our churn definition: a customer is marked as churned if they have not placed
+an order in the last 90 days and have not renewed their subscription.
+
+Common reasons customers churn, based on exit surveys:
+1. Price sensitivity — customers on the Basic plan cite cost as the top reason
+   for cancellation, especially in the first 6 months.
+2. Poor onboarding — customers who do not complete the onboarding checklist
+   within 14 days of signup churn at nearly triple the rate of those who do.
+3. Feature gaps — mid-market customers frequently request integrations with
+   third-party accounting tools; the lack of this integration is the second
+   most common complaint in exit surveys.
+4. Support response time — customers who wait more than 24 hours for a first
+   response to a support ticket are significantly more likely to churn within
+   the following quarter.
+
+Retention playbook:
+- Customers inactive for 30 days receive an automated re-engagement email.
+- Customers inactive for 60 days are flagged for outreach by the customer
+  success team.
+- At 90 days of inactivity, the customer is marked churned in the CRM and
+  routed to a win-back campaign three months later.
+
+Regional notes:
+- Central Asian accounts (Uzbekistan, Kazakhstan, Kyrgyzstan, Tajikistan) show
+  higher retention when onboarding is offered in the local language.
+- Enterprise accounts rarely churn for price reasons; when they do churn, it
+  is almost always due to a champion leaving the company.
