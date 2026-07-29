@@ -1,8 +1,6 @@
 .env
-.env.*
-!/.env.example
 venv/
 __pycache__/
 *.pyc
 data/qdrant_local/
-data/company.db
+data/memory.db

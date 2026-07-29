@@ -1,0 +1,56 @@
+:root {
+  --console-bg: #10131a;
+  --console-surface: #171b24;
+  --console-border: #2a2f3a;
+  --console-text: #e5e7ee;
+  --console-muted: #8b92a6;
+  --signal: #5eead4;
+  --signal-dim: #2f6e66;
+  --warn: #f5a524;
+  --ok: #4ade80;
+  --paper: #faf6ec;
+  --paper-ink: #23231f;
+  --paper-rule: #c2a878;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--console-bg);
+  color: var(--console-text);
+  font-family: var(--font-body), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .step-in {
+    animation: stepIn 0.35s ease-out both;
+  }
+  .report-in {
+    animation: reportIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+  }
+}
+
+@keyframes stepIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes reportIn {
+  from { opacity: 0; transform: translateY(10px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+input::placeholder {
+  color: #5b6172;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+}
