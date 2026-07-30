@@ -3,7 +3,7 @@
 A supervisor-led multi-agent system that answers business questions by routing them to the right specialist — a document retriever, a live web search agent, a text-to-SQL agent, and a Python code agent — then self-critiques and revises its own answer before returning it. Built as a capstone project for the IT Park Uzbekistan × World Bank "Uzbekistan Digital Inclusion" AI/ML traineeship.
 
 **Live demo:** https://multi-agent-taupe.vercel.app
-**API:** https://multi-agent-ai-analyst-api-a5jp.onrender.com
+
 
 > Free-tier hosting note: the backend runs on Render's free plan, which spins down after inactivity — the first request after a while may take 30–60 seconds to wake up.
 
