@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-30T11:59:23.405382+00:00",
+  "results": [
+    {
+      "question": "How many customers have churned in the last 90 days?",
+      "answer": "Based on the database query, there are 25 customers who have churned in the last 90 days.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 1.0
+    },
+    {
+      "question": "Why do customers churn, according to our handbook?",
+      "answer": "According to our company handbook, exit surveys indicate that customers churn for the following common reasons:\n\n1. **Price sensitivity:** Basic plan customers cite cost as the top reason for cancellation, particularly within the first six months (though enterprise accounts rarely churn for price reasons, usually doing so when a champion leaves the company).\n2. **Poor onboarding:** Customers who fail to complete the onboarding checklist within 14 days of signup churn at nearly triple the rate of those who finish it. \n3. **Feature gaps:** Mid-market customers frequently request third-party accounting integrations, and the lack of these integrations is the second most common complaint.\n4. **Support response time:** Customers who wait more than 24 hours for a first support ticket response are significantly more likely to churn in the following quarter.",
+      "faithfulness": 0.875,
+      "answer_relevancy": 0.968
+    },
+    {
+      "question": "What is the standard deviation of these numbers: 45, 67, 23, 89?",
+      "answer": "Based on the provided evidence, the standard deviation of the numbers 45, 67, 23, and 89 is approximately 28.40.",
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.993
+    }
+  ],
+  "averages": {
+    "faithfulness": 0.958,
+    "answer_relevancy": 0.987
+  }
+}

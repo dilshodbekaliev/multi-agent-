@@ -1,4 +1,5 @@
 import json
+import os
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -22,15 +23,11 @@ app.add_middleware(
 init_db()
 app_graph = build_graph()
 
+EVAL_RESULTS_PATH = os.path.join(os.path.dirname(__file__), "..", "data", "eval_results.json")
+
 
 @app.on_event("startup")
 def ensure_vector_store_populated():
-    """
-    On platforms with ephemeral disks (e.g. Render free tier), the local
-    Qdrant store resets on every deploy/restart. Auto-ingest the sample
-    docs if the collection is empty, so the retriever agent (F3) always
-    has something to search without a manual step.
-    """
     try:
         from app.ingestion import get_qdrant_client, ensure_collection, build_vectorstore
 
@@ -96,3 +93,12 @@ def chat_stream(question: str, session_id: str = "default"):
         yield f"event: done\ndata: {json.dumps({'answer': final_answer, 'steps': all_steps})}\n\n"
 
     return StreamingResponse(event_generator(), media_type="text/event-stream")
+
+
+@app.get("/eval")
+def get_eval_results():
+    if not os.path.exists(EVAL_RESULTS_PATH):
+        return {"available": False}
+    with open(EVAL_RESULTS_PATH) as f:
+        data = json.load(f)
+    return {"available": True, **data}

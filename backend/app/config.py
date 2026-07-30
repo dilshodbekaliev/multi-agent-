@@ -16,7 +16,7 @@ class Settings:
     QDRANT_API_KEY: str = os.getenv("QDRANT_API_KEY", "")
     QDRANT_COLLECTION: str = "documents"
 
-    LLM_MODEL: str = "gemini-flash-latest"
+    LLM_MODEL: str = "gemini-flash-lite-latest"
     EMBEDDING_MODEL: str = "models/gemini-embedding-001"
     EMBEDDING_DIM: int = 3072
 
